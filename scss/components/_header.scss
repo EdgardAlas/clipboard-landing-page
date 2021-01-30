@@ -1,0 +1,26 @@
+.header {
+    text-align: center;
+
+    &__logo {
+        padding: 4rem;
+    }
+
+    &__title,
+    &__subtitle {
+
+        margin: 0 auto;
+        font-weight: 600;
+    }
+
+    &__title {
+        color: $dark-grayish-blue;
+        padding: 0 0.8rem;
+        transform: scale(0.9);
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+}

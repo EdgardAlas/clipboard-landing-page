@@ -1,0 +1,40 @@
+@mixin button-variant($color) {
+    color: #fff;
+    background-color: $color;
+    box-shadow: 0 5px darken($color, 5%);
+}
+
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    font-size: 1rem;
+    padding: 1rem 5em;
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+    font-weight: 600;
+
+    transition: opacity 0.3s ease;
+
+    &:nth-child(even) {
+        margin-top: 1.2rem;
+    }
+
+    &:focus {
+        outline: none;
+        opacity: 0.7;
+    }
+
+    &.cyan {
+        @include button-variant($strong-cyan);
+    }
+
+    &.purple {
+        @include button-variant($light-blue)
+    }
+}

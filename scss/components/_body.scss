@@ -1,0 +1,10 @@
+body {
+    --background-image: url("/images/bg-header-mobile.png");
+    background: var(--background-image);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $grayish-blue
+
+}
