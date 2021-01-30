@@ -1,4 +1,4 @@
-@for $break from 1 to 10 {
+@for $break from 1 to 6 {
     .break-#{$break} {
         height: #{$break}rem;
     }

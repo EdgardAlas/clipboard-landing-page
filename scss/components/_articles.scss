@@ -34,7 +34,7 @@
         margin-top: 1rem;
 
         &--left {
-            @include breakpoint(md) {
+            @media only screen and (min-width: 768px) {
                 width: 50%;
                 transform: translateX(-20%);
             }
@@ -45,7 +45,7 @@
     &__body {
         width: 90%;
 
-        @include breakpoint(md) {
+        @media only screen and (min-width: 768px) {
             width: 100%;
             display: flex;
             justify-content: center;
@@ -56,14 +56,14 @@
         margin-top: 2rem;
 
         &--text-left {
-            @include breakpoint(md) {
+            @media only screen and (min-width: 768px) {
                 text-align: left;
                 width: 40%;
             }
         }
 
         &--inline {
-            @include breakpoint(md) {
+            @media only screen and (min-width: 768px) {
                 display: flex;
                 justify-content: space-evenly;
             }
@@ -83,7 +83,7 @@
         }
 
         &--inline {
-            @include breakpoint(md) {
+            @media only screen and (min-width: 768px) {
                 width: 20%;
             }
         }
