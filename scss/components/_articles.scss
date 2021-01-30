@@ -4,6 +4,11 @@
     align-items: center;
     text-align: center;
 
+
+    &__header {
+        width: 100%;
+    }
+
     &__title {
         margin-left: auto;
         margin-right: auto;
@@ -15,22 +20,54 @@
     &__description {
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        width: 50%;
         font-size: 1rem;
+
+        &--bottom {
+            margin-bottom: 3rem;
+        }
     }
 
 
     &__img {
         max-width: 100%;
         margin-top: 1rem;
+
+        &--left {
+            @include breakpoint(md) {
+                width: 50%;
+                transform: translateX(-20%);
+            }
+        }
+
     }
 
     &__body {
         width: 90%;
+
+        @include breakpoint(md) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__features {
         margin-top: 2rem;
+
+        &--text-left {
+            @include breakpoint(md) {
+                text-align: left;
+                width: 40%;
+            }
+        }
+
+        &--inline {
+            @include breakpoint(md) {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
     }
 
 
@@ -43,6 +80,12 @@
 
         &:last-of-type {
             margin-bottom: 0;
+        }
+
+        &--inline {
+            @include breakpoint(md) {
+                width: 20%;
+            }
         }
 
     }
