@@ -15,6 +15,26 @@
   height: 4rem;
 }
 
+.break-5 {
+  height: 5rem;
+}
+
+.break-6 {
+  height: 6rem;
+}
+
+.break-7 {
+  height: 7rem;
+}
+
+.break-8 {
+  height: 8rem;
+}
+
+.break-9 {
+  height: 9rem;
+}
+
 body {
   --background-image: url("/images/bg-header-mobile.png");
   background: var(--background-image);
@@ -23,6 +43,7 @@ body {
   font-size: 18px;
   font-family: "Bai Jamjuree", sans-serif;
   color: #9fabb2;
+  line-height: 1.5;
 }
 
 .button-group {
@@ -95,4 +116,140 @@ body {
 .header__subtitle {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.article__title {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  color: #4c545d;
+  width: 85%;
+}
+
+.article__description {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  font-size: 1rem;
+}
+
+.article__img {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.article__body {
+  width: 90%;
+}
+
+.article__features {
+  margin-top: 2rem;
+}
+
+.article__feature {
+  max-width: 100%;
+}
+
+.article__feature:nth-of-type(n) {
+  margin-bottom: 2rem;
+}
+
+.article__feature:last-of-type {
+  margin-bottom: 0;
+}
+
+.article__feature-title {
+  margin: 0;
+  font-weight: 600;
+  color: #4c545d;
+}
+
+.article__feature-description {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.article__feature-img {
+  padding: 1rem;
+}
+
+.companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.companies img {
+  width: 30%;
+}
+
+.companies img:nth-of-type(n) {
+  margin-bottom: 3rem;
+}
+
+.companies img:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f4f5f6;
+  padding-bottom: 1rem;
+}
+
+.footer__logo {
+  width: 10%;
+  margin: 2rem;
+}
+
+.footer__link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem 0;
+}
+
+.footer__social-media {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem 0;
+}
+
+.attribution {
+  background-color: #f4f5f6;
 }
