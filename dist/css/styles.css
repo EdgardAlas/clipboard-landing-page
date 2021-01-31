@@ -428,6 +428,15 @@ body {
   }
 }
 
+.footer__social-media-link {
+  cursor: pointer;
+}
+
+.footer__social-media-link:hover {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
 @media only screen and (min-width: 768px) {
   .footer {
     -webkit-box-orient: horizontal;

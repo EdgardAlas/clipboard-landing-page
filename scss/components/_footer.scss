@@ -75,6 +75,14 @@
 
     }
 
+    &__social-media-link {
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(200%);
+        }
+    }
+
     @media only screen and (min-width: 768px) {
         flex-direction: row;
         justify-content: center;
