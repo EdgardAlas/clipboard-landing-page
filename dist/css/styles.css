@@ -37,6 +37,12 @@ body {
   line-height: 1.5;
 }
 
+@media only screen and (min-width: 768px) {
+  body {
+    --background-image: url("/images/bg-header-desktop.png");
+  }
+}
+
 .button-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,18 +164,25 @@ body {
   margin-right: auto;
   font-weight: 600;
   color: #4c545d;
-  width: 85%;
+  width: 80%;
 }
 
 .article__description {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
   font-size: 1rem;
 }
 
 .article__description--bottom {
+  width: 50%;
   margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .article__description {
+    width: 45%;
+  }
 }
 
 .article__img {

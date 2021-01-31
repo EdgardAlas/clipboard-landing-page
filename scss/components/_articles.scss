@@ -14,18 +14,24 @@
         margin-right: auto;
         font-weight: 600;
         color: $dark-grayish-blue;
-        width: 85%;
+        width: 80%;
     }
 
     &__description {
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 80%;
         font-size: 1rem;
 
         &--bottom {
+            width: 50%;
             margin-bottom: 3rem;
         }
+
+        @media only screen and (min-width: 768px) {
+            width: 45%;
+        }
+
     }
 
 
